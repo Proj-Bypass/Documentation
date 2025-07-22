@@ -1,0 +1,40 @@
+✅ Requisitos Funcionais
+- O sistema deve ler cartões RFID utilizando o sensor RC522 de tecnologia RFID.
+- O sistema deve validar os dados do cartão RFID em tempo real com o backend.
+- O sistema deve abrir e fechar a catraca/fechadura automaticamente através de um motor integrado a um relê.
+- O sistema deve fornecer feedback visual com LEDs ou com uma tela LCD.
+- O sistema deve registrar todas as tentativas de acesso com data, hora, estudante e resultado.
+- O sistema deve verificar se o horário atual está dentro dos intervalos permitidos para entrada ou saída do estudante.
+- O sistema deve permitir múltiplos intervalos de horário por tipo (entrada e saída).
+- O sistema deve bloquear o acesso fora dos horários permitidos.
+- O sistema deve permitir a concessão de créditos de liberação excepcional para acessos fora do horário.
+- O sistema deve consumir automaticamente os créditos excepcionais quando utilizados.
+- O sistema deve registrar no histórico os acessos realizados com liberação excepcional.
+- O sistema deve permitir o cadastro de estudantes com nome completo, CPF, e-mail, matrícula, ID RFID, horários permitidos, turma , senha e imagem para identificação.
+- O sistema deve permitir a edição, remoção e busca de estudantes por diferentes critérios.
+- O sistema deve permitir a configuração de horários individualmente ou por turma.
+- O sistema deve permitir o monitoramento em tempo real das tentativas de acesso.
+- O sistema deve apresentar uma interface web administrativa para login, cadastro, monitoramento e configurações.
+- O sistema deve permitir o funcionamento em modo offline caso haja falta de energia, com uso de uma bateria externa
+- O sistema deve realizar a comunicação entre o ESP32 e o servidor por meio de requisições HTTP via Wi-Fi, em caso de falta de energia, via Hotspot.
+- O sistema deve fornecer feedback para fins de debug.
+
+
+⚙️ Requisitos Não Funcionais
+- O sistema deve utilizar PHP no backend, HTML5, CSS3 e JavaScript no frontend, com auxílio de outros frameworks.
+- O sistema deve armazenar os dados dos estudantes em um banco de dados SQL.
+- O sistema deve suportar múltiplos usuários e pontos de acesso simultâneos.
+- O sistema deve validar e sanitizar os dados recebidos nas requisições HTTP para garantir segurança.
+- O sistema deve exigir login com credenciais para acesso à interface administrativa.
+- O sistema deve oferecer uma interface web responsiva, acessível e de fácil utilização em computadores e dispositivos móveis.
+- O sistema deve registrar logs e permitir auditorias através do histórico de acessos.
+- O sistema deve permitir backup dos dados e manter logs antigos para análise posterior.
+- O sistema deve estar organizado em uma estrutura modular, com separação clara entre backend, frontend e lógica de negócio.
+- O sistema deve ser compatível com servidores Apache ou SQL com suporte a PHP.
+- O sistema deve ser programado em uma IDE como o Arduino IDE para o ESP32.
+- O sistema deve incluir instruções claras de instalação e configuração, tanto do hardware quanto do software.
+
+- O sistema deve estar preparado para melhorias futuras, como:
+Relatórios em PDF
+Integração com sistemas acadêmicos
+Notificações por e-mail/SMS
