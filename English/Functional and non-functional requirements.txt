@@ -1,0 +1,38 @@
+✅ Functional Requirements
+- The system must read RFID cards using the RC522 RFID sensor.
+- The system must validate the RFID card data in real-time with the backend.
+- The system must automatically unlock and lock the turnstile/lock using a motor controlled via a relay.
+- The system must provide visual feedback through LEDs or an LCD display.
+- The system must log all access attempts with date, time, student, and outcome.
+- The system must verify whether the current time falls within the permitted entry or exit intervals for the student.
+- The system must support multiple time intervals per type (entry and exit).
+- The system must block access attempts made outside the permitted times.
+- The system must allow granting of exceptional access credits for out-of-schedule access.
+- The system must automatically deduct exceptional credits when used.
+- The system must record in the access log all events involving exceptional access.
+- The system must allow student registration with full name, CPF (Brazilian ID), email, enrollment number, RFID ID, permitted time intervals, class, password, and photo for identification.
+- The system must support editing, deletion, and searching of students based on various criteria.
+- The system must support time configuration individually or by class.
+- The system must allow real-time monitoring of access attempts.
+- The system must provide a web-based administrative interface for login, registration, monitoring, and configuration.
+- The system must operate in offline mode using an external battery in case of a power outage.
+- The system must enable communication between the ESP32 and the server via HTTP requests over Wi-Fi, or via hotspot in case of power failure.
+- The system must provide feedback for debugging purposes.
+
+⚙️ Non-Functional Requirements
+- The system must use PHP for the backend, and HTML5, CSS3, and JavaScript for the frontend, optionally with additional frameworks.
+- The system must store student data in an SQL database.
+- The system must support multiple users and concurrent access points.
+- The system must validate and sanitize data received in HTTP requests to ensure security.
+- The system must require login credentials to access the administrative interface.
+- The system must provide a responsive, accessible, and user-friendly web interface for both desktop and mobile devices.
+- The system must log activities and support auditing through the access history.
+- The system must support data backups and preserve historical logs for later analysis.
+- The system must follow a modular architecture with clear separation between backend, frontend, and business logic.
+- The system must be compatible with Apache or SQL servers that support PHP.
+- The system must be programmed using an IDE such as the Arduino IDE for the ESP32.
+- The system must include clear installation and configuration instructions for both hardware and software.
+- The system must be designed with future enhancements in mind, such as:
+  - PDF report generation  
+  - Integration with academic management systems  
+  - Email/SMS notifications
